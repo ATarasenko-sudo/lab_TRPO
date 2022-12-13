@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by ATarasenko-sudo</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Point of departure</label>
+    <input type="text" id="departure" name="pointofdeparture" placeholder="Moscow" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="name">Point of arrival</label>
+    <input type="text" id="arrival" name="pointofarrival" placeholder="Kazan"  pattern=[A-Z\sa-z]{3,20} required>
+  <hr>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="transport">Choose a type of transport</option>
+        <option value="connecting">Vehicle</option>
+        <option value="adjoining">Airplane</option>
+        <option value="adjacent">Train</option>
+    </select>
+  </div>
+  <hr>
+  <button  onclick="myFunction()" type="button">Book The Rooms</button>
+
+  <script src="script.js"></script>
+<style>
+  #customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FFA500;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Results</h1>
+
+<table id="customers">
+  <tr>
+    <th>transport</th>
+    <th>departure</th>
+    <th>destination</th>
+    <th>departure date</th>
+    <th>arrival date</th>
+    <th>remaining seats</th>
+    <th>cost</th>
+  </tr>
+  <tr>
+    <td</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+     <td</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>    
+    <td</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+  <p id="greeting"></p>
+<p id="storedName"></p>
+</form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
